@@ -1,0 +1,34 @@
+﻿@model MVC_teste.Models.Clientes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Clientes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome_cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome_cliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sobrenome_cliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sobrenome_cliente)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cod_cliente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

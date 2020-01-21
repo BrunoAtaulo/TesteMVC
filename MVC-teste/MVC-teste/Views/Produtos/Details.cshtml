@@ -1,0 +1,26 @@
+﻿@model MVC_teste.Models.Produtos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Produtos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome_produto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome_produto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cod_produto }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
